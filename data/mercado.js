@@ -1,5 +1,5 @@
 window.MERCADO = {
- "actualizado": "2026-07-02T20:41:35Z",
+ "actualizado": "2026-07-02T20:42:33Z",
  "fuente": "Yahoo Finance",
  "instrumentos": [
   {
