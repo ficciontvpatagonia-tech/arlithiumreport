@@ -1,5 +1,5 @@
 window.MERCADO = {
- "actualizado": "2026-07-02T17:16:22Z",
+ "actualizado": "2026-07-02T20:41:35Z",
  "fuente": "Yahoo Finance",
  "instrumentos": [
   {
@@ -14,8 +14,8 @@ window.MERCADO = {
    "symbol": "LIT",
    "corto": "LIT ETF",
    "descripcion": "Global X Lithium & Battery Tech · NYSE",
-   "precio": "$76.07",
-   "variacion": -2.44,
+   "precio": "$76.53",
+   "variacion": -1.85,
    "cierres": [
     78.91,
     78.45,
@@ -23,15 +23,15 @@ window.MERCADO = {
     77.31,
     78.28,
     77.97,
-    76.07
+    76.53
    ]
   },
   {
    "symbol": "ALB",
    "corto": "ALB",
    "descripcion": "Albemarle · NYSE",
-   "precio": "$133.65",
-   "variacion": -1.79,
+   "precio": "$135.56",
+   "variacion": -0.38,
    "cierres": [
     147.84,
     141.05,
@@ -39,15 +39,15 @@ window.MERCADO = {
     129.72,
     135.03,
     136.08,
-    133.65
+    135.56
    ]
   },
   {
    "symbol": "SQM",
    "corto": "SQM",
    "descripcion": "SQM · NYSE",
-   "precio": "$72.25",
-   "variacion": -2.65,
+   "precio": "$72.70",
+   "variacion": -2.05,
    "cierres": [
     75.58,
     73.11,
@@ -55,15 +55,15 @@ window.MERCADO = {
     69.86,
     74.04,
     74.22,
-    72.25
+    72.7
    ]
   },
   {
    "symbol": "LAR",
    "corto": "LAR",
    "descripcion": "Lithium Argentina · NYSE",
-   "precio": "$7.97",
-   "variacion": -2.45,
+   "precio": "$7.98",
+   "variacion": -2.33,
    "cierres": [
     8.16,
     8.04,
@@ -71,7 +71,7 @@ window.MERCADO = {
     7.97,
     8.27,
     8.17,
-    7.97
+    7.98
    ]
   },
   {
@@ -95,22 +95,23 @@ window.MERCADO = {
    "corto": "GANFENG",
    "descripcion": "Ganfeng Lithium · SZSE",
    "precio": "¥63.99",
-   "variacion": -2.16,
+   "variacion": -2.93,
    "cierres": [
     71.62,
     68.36,
     63.38,
     64.07,
     65.4,
-    65.92
+    65.92,
+    63.99
    ]
   },
   {
    "symbol": "RIO",
    "corto": "RIO",
    "descripcion": "Rio Tinto (Arcadium) · NYSE",
-   "precio": "$93.82",
-   "variacion": 0.5,
+   "precio": "$94.42",
+   "variacion": 1.15,
    "cierres": [
     94.03,
     95.11,
@@ -118,7 +119,7 @@ window.MERCADO = {
     94.29,
     94.93,
     93.35,
-    93.8158
+    94.42
    ]
   }
  ]
