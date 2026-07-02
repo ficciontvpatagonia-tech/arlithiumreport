@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- noindex TEMPORAL: quitar cuando el sitio salga con dominio propio (regla SEO.md: todo indexable) -->
+<meta name="robots" content="noindex, nofollow">
+<title>AR Lithium Report — Lithium Markets, Companies & the Lithium Triangle</title>
+<meta name="description" content="Independent business intelligence on lithium: markets, companies and policy across Argentina, Chile, Bolivia and the world.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230e7c6b'/%3E%3Ctext x='32' y='43' font-family='Helvetica,Arial' font-size='28' font-weight='800' fill='white' text-anchor='middle'%3EAR%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#111417;
+    --paper:#ffffff;
+    --soft:#f5f6f7;
+    --line:#e3e6e8;
+    --chrome:#0d1117;
+    --accent:#0e7c6b;
+    --accent-ink:#0a5f52;
+    --up:#0a7d43;
+    --down:#b3372a;
+    --muted:#5f6b73;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--paper);font-size:15px}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+  .num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+  .topbar{background:var(--chrome);color:#aab6bd;font-size:12px}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:32px}
+  .langs a{margin-left:16px;color:#8b99a1;font-weight:600;letter-spacing:.04em}
+  .langs a.active{color:#fff;border-bottom:2px solid var(--accent);padding-bottom:1px}
+
+  .header{background:#fff;border-bottom:1px solid var(--line)}
+  .header .wrap{display:flex;align-items:center;justify-content:space-between;height:88px;gap:24px}
+  .logo{display:flex;align-items:center;gap:14px}
+  .logo-chip{background:var(--accent);color:#fff;font-weight:800;font-size:28px;letter-spacing:.02em;padding:11px 13px;border-radius:4px;line-height:1}
+  .logo-word{font-size:32px;font-weight:800;letter-spacing:-.01em;line-height:1.05}
+  .logo-word small{display:block;font-size:12px;font-weight:600;letter-spacing:.26em;color:var(--muted);margin-top:4px}
+  .h-right{display:flex;align-items:center;gap:14px}
+  .search{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:4px;padding:8px 12px;color:var(--muted);font-size:13px;min-width:210px}
+  .btn{background:var(--chrome);color:#fff;font-size:13px;font-weight:700;padding:9px 16px;border-radius:4px;letter-spacing:.02em}
+  @media(max-width:760px){.search{display:none}}
+
+  nav{background:#fff;border-bottom:2px solid var(--ink);position:sticky;top:0;z-index:50}
+  nav .wrap{display:flex;gap:26px;overflow-x:auto}
+  nav a{display:block;padding:11px 1px;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;color:#333}
+  nav a:hover,nav a.on{color:var(--accent-ink);box-shadow:inset 0 -3px 0 var(--accent)}
+  nav a.star{color:var(--accent-ink)}
+
+  .mktstrip{background:var(--chrome);color:#e6ebee}
+  .mktstrip .wrap{display:flex;align-items:stretch;gap:0;padding:0 12px}
+  .scroller{flex:1;min-width:0;display:flex;overflow:hidden}
+  .tk{display:flex;flex-shrink:0;animation:tick 40s linear infinite}
+  .mktstrip:hover .tk{animation-play-state:paused}
+  @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+  .q{display:flex;align-items:center;gap:10px;padding:10px 18px;border-right:1px solid #232c33;white-space:nowrap}
+  .q .n{font-size:11px;color:#8b99a1;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+  .q .p{font-family:var(--mono);font-size:14px;font-weight:600}
+  .q .c{font-family:var(--mono);font-size:12px;font-weight:700}
+  .q .c.u{color:#35c07e}.q .c.d{color:#ff8674}
+  .q svg{display:block}
+  .strip-spark-u{stroke:#35c07e}.strip-spark-d{stroke:#ff8674}
+  .mktstrip .all{margin-left:auto;display:flex;align-items:center;padding:0 6px 0 18px;font-size:12px;font-weight:700;color:#35c07e;letter-spacing:.04em;white-space:nowrap}
+
+  .grid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:36px;padding:30px 0 10px}
+  @media(max-width:940px){.grid{grid-template-columns:1fr}}
+
+  .ph{position:relative;width:100%;aspect-ratio:16/9;border-radius:3px;overflow:hidden;display:flex;align-items:flex-end;background:var(--soft)}
+  .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .ph small{position:relative;background:rgba(0,0,0,.55);color:#fff;font-size:10.5px;padding:3px 8px;margin:8px;border-radius:3px;letter-spacing:.03em}
+
+  .kicker{color:var(--accent-ink);font-size:11.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+  .src{font-size:11.5px;color:var(--muted)}
+  .src a{color:var(--accent-ink);font-weight:600}
+  .hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:26px;padding-bottom:26px;border-bottom:1px solid var(--line)}
+  @media(max-width:700px){.hero{grid-template-columns:1fr}}
+  .hero h2{font-size:30px;line-height:1.14;font-weight:800;letter-spacing:-.015em;margin:8px 0 10px}
+  .hero p{font-size:15.5px;line-height:1.55;color:#3a4248}
+  .hero .src{margin-top:10px}
+
+  .latest h4{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:4px}
+  .latest .cols{column-count:2;column-gap:36px}
+  @media(max-width:700px){.latest .cols{column-count:1}}
+  .latest .it{padding:12px 0;border-bottom:1px solid var(--line);break-inside:avoid;display:block}
+  .latest .it .t{font-size:15px;font-weight:700;line-height:1.3}
+  .latest .it .m{font-size:11.5px;color:var(--muted);margin-top:4px;text-transform:uppercase;letter-spacing:.06em}
+  .latest .it .m b{color:var(--accent-ink)}
+
+  .sub-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:24px 0 8px}
+  @media(max-width:940px){.sub-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.sub-grid{grid-template-columns:1fr}}
+  .sub-grid h3{font-size:15.5px;font-weight:700;line-height:1.3;margin:9px 0 5px}
+  .sub-grid p{font-size:13px;line-height:1.45;color:#4a545b;margin-bottom:6px}
+
+  aside .box{border:1px solid var(--line);border-radius:5px;margin-bottom:24px;overflow:hidden}
+  aside .box h4{background:var(--soft);border-bottom:1px solid var(--line);padding:10px 14px;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:800;display:flex;justify-content:space-between;align-items:center}
+  aside .box h4 a{color:var(--accent-ink);font-size:11px;letter-spacing:.03em}
+  .mkt{width:100%;border-collapse:collapse;font-size:13px}
+  .mkt td{padding:9px 12px;border-bottom:1px solid var(--soft);vertical-align:middle}
+  .mkt tr:last-child td{border-bottom:none}
+  .mkt .sym{font-weight:700}
+  .mkt .sym small{display:block;font-weight:400;color:var(--muted);font-size:11px}
+  .mkt .val{text-align:right;font-family:var(--mono);font-weight:600;font-size:13px;white-space:nowrap}
+  .mkt .chg{text-align:right;font-family:var(--mono);font-weight:700;font-size:12px;width:58px}
+  .chg.u{color:var(--up)}.chg.d{color:var(--down)}
+  .mkt .spk{width:70px;text-align:right}
+  .mkt .spk .side-spark-u{stroke:var(--up)}.mkt .spk .side-spark-d{stroke:var(--down)}
+  .foot-note{padding:7px 12px;font-size:10.5px;color:var(--muted);background:var(--soft);border-top:1px solid var(--line)}
+
+  .tiles{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+  .tile{background:#fff;padding:14px 14px 12px}
+  .tile .big{font-family:var(--mono);font-size:23px;font-weight:700;color:var(--ink);letter-spacing:-.02em}
+  .tile .big em{font-style:normal;color:var(--accent-ink)}
+  .tile .lbl{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.35}
+  .most td{padding:10px 12px;font-size:13.5px;font-weight:600;line-height:1.35}
+  .most .r{color:var(--accent);font-family:var(--mono);font-weight:700;width:20px}
+
+  .interviews{background:var(--chrome);color:#e8edef;margin:26px 0 34px;padding:34px 0 38px}
+  .sec-h{display:flex;align-items:center;gap:14px;margin:0 0 8px}
+  .sec-h h2{font-size:20px;font-weight:800;letter-spacing:-.01em;white-space:nowrap}
+  .sec-h .rule{flex:1;height:1px;background:var(--line)}
+  .sec-h a{font-size:12px;font-weight:700;color:var(--accent-ink);white-space:nowrap;letter-spacing:.04em}
+  .sec-sub{font-size:12.5px;color:#8b99a1;margin-bottom:22px}
+  .interviews .sec-h h2{color:#fff}
+  .interviews .sec-h .rule{background:#243038}
+  .interviews .sec-h a{color:#35c07e}
+  .lead-int{display:grid;grid-template-columns:104px 1fr;gap:24px;align-items:center;margin-bottom:26px}
+  .avatar{width:104px;height:104px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:32px;color:#fff;background:linear-gradient(140deg,#17a398,#0b4f46);border:3px solid #243038;flex-shrink:0}
+  .bigquote{font-family:Georgia,"Times New Roman",serif;font-size:25px;line-height:1.35;font-style:italic}
+  .bigquote::before{content:"“";color:#35c07e}
+  .bigquote::after{content:"”";color:#35c07e}
+  .who{margin-top:10px;font-size:12.5px;color:#8b99a1;letter-spacing:.04em}
+  .who a{color:#35c07e}
+  .int-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:700px){.int-grid{grid-template-columns:1fr}.lead-int{grid-template-columns:1fr;text-align:center;justify-items:center}}
+  .int-card{border:1px solid #243038;border-radius:5px;padding:16px;display:flex;gap:14px;align-items:center}
+  .int-card .avatar{width:58px;height:58px;font-size:19px;border-width:2px}
+  .int-card h3{font-size:15.5px;font-weight:700;line-height:1.35;color:#fff}
+  .int-card p{font-size:12px;color:#8b99a1;margin-top:5px;text-transform:uppercase;letter-spacing:.06em}
+
+  .tri{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-bottom:38px}
+  @media(max-width:820px){.tri{grid-template-columns:1fr}}
+  .tri .card{border:1px solid var(--line);border-radius:5px;overflow:hidden;display:block}
+  .tri .card .ph{aspect-ratio:16/8;border-radius:0}
+  .tri .body{padding:15px}
+  .tri h3{font-size:16.5px;font-weight:700;line-height:1.3;margin:6px 0 7px}
+  .tri p{font-size:13px;line-height:1.5;color:#4a545b;margin-bottom:6px}
+  .flag{font-size:12px;font-weight:800;letter-spacing:.09em;color:var(--accent-ink);text-transform:uppercase}
+
+  footer{background:var(--chrome);color:#8b99a1}
+  footer .wrap{padding:34px 20px;display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;font-size:13px}
+  footer .flogo{display:flex;align-items:center;gap:10px}
+  footer .flogo .logo-chip{font-size:16px;padding:7px 9px}
+  footer .flogo .logo-word{color:#fff;font-size:18px}
+  footer .flogo .logo-word small{color:#8b99a1}
+  footer ul{list-style:none;line-height:2}
+  footer h5{color:#fff;font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:8px}
+  .copy{background:#090d10;text-align:center;font-size:11px;padding:12px 20px;color:#66727a;line-height:1.7}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span id="fecha">—</span>
+    <span class="langs"><a class="active" href="#">EN</a><a href="#" title="Próximamente">ES</a><a href="#" title="Prochainement">FR</a><a href="#" title="即将推出">中文</a></span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap">
+    <a class="logo" href="./">
+      <span class="logo-chip"></span>
+      <span class="logo-word"><span class="brand-text"></span><small class="brand-tag"></small></span>
+    </a>
+    <div class="h-right">
+      <span class="search">🔍 Search companies, salares, people…</span>
+      <a class="btn" href="#">Newsletter</a>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a class="on" href="./">Home</a>
+    <a href="#markets">Markets</a>
+    <a class="star" href="#interviews">★ Interviews</a>
+    <a href="#argentina">Argentina</a>
+    <a href="#triangle">Chile</a>
+    <a href="#triangle">Bolivia</a>
+    <a href="#triangle">The Triangle</a>
+    <a href="#companies">Companies</a>
+    <a href="#analysis">Analysis</a>
+  </div>
+</nav>
+
+<div class="mktstrip" id="markets">
+  <div class="wrap">
+    <div class="scroller"><div class="tk" id="ticker"></div></div>
+    <a class="all" href="https://tradingeconomics.com/commodity/lithium" target="_blank" rel="noopener">All market data →</a>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid">
+    <div>
+      <!-- HERO: nota real -->
+      <div class="hero" id="argentina">
+        <article>
+          <div class="ph"><img src="fotos/mineria_hombre_muerto.jpg" alt="Satellite view of lithium evaporation ponds at Salar del Hombre Muerto, Catamarca, Argentina" width="1600" height="892"><small>Salar del Hombre Muerto, Catamarca — INPE satellite imagery (CC BY-SA 2.0)</small></div>
+        </article>
+        <article>
+          <div class="kicker">Argentina · Financing</div>
+          <h2>Rio Tinto Locks In $1.175bn for Rincón as First Lithium Cargo Sails to Shanghai</h2>
+          <p>IFC, IDB Invest, Export Finance Australia and JBIC back the $2.5bn Salta project — 60,000 t/y of battery-grade carbonate from 2028. The first 200-tonne shipment has already left Buenos Aires, and Rio's Argentine lithium bet now tops $3.9bn across five assets.</p>
+          <div class="src">Source: <a href="https://www.panorama-minero.com/en/news/rio-tinto-secures-us-1-175-billion-for-argentina-lithium-project-as-rincon-begins-exports" target="_blank" rel="noopener">Panorama Minero</a></div>
+        </article>
+      </div>
+
+      <!-- SECUNDARIAS: notas reales -->
+      <div class="sub-grid" id="companies">
+        <article>
+          <div class="ph"><img src="fotos/uyuni_esa.jpg" alt="Salar de Uyuni, Bolivia, seen from space" width="1600" height="1067" loading="lazy"><small>Salar de Uyuni — ESA (CC BY-SA 3.0 IGO)</small></div>
+          <div class="kicker" style="margin-top:10px">Bolivia</div>
+          <h3>Uyuni goes industrial: YLB and China's CBC advance $1bn direct-extraction plants</h3>
+          <p>Two DLE plants target 35,000 t/y, with YLB keeping 51%. A parallel $970m deal with Russia's Uranium One adds 14,000 t more.</p>
+          <div class="src">Source: <a href="https://www.mining.com/mining-com-series-mining-power-and-a-new-us-strategy-in-latin-america/" target="_blank" rel="noopener">Mining.com</a></div>
+        </article>
+        <article>
+          <div class="ph"><img src="fotos/atacama_ponds.jpg" alt="Lithium evaporation ponds at Salar de Atacama, Chile, satellite view" width="710" height="792" loading="lazy"><small>SQM ponds, Salar de Atacama — NASA (public domain)</small></div>
+          <div class="kicker" style="margin-top:10px">Chile · Markets</div>
+          <h3>Codelco and SQM budget $3bn to take direct extraction commercial in the Atacama</h3>
+          <p>The state-backed venture files its environmental study and targets 280,000–300,000 t/y of LCE from 2031 through 2060.</p>
+          <div class="src">Source: <a href="https://www.miningweekly.com/article/codelco-sqm-budget-3bn-for-lithium-project-in-chile-2026-05-27" target="_blank" rel="noopener">Mining Weekly</a> · <a href="https://www.bloomberg.com/news/articles/2026-05-26/codelco-and-sqm-budget-3-billion-for-lithium-project-in-chile" target="_blank" rel="noopener">Bloomberg</a></div>
+        </article>
+        <article>
+          <div class="ph"><img src="fotos/baterias.jpg" alt="Cylindrical lithium-ion battery cells" width="1600" height="900" loading="lazy"><small>Li-ion cells — Wikimedia Commons (CC0)</small></div>
+          <div class="kicker" style="margin-top:10px">Markets</div>
+          <h3>Lithium's comeback cools: carbonate slips to ¥151,750 on Jianxiawo restart talk</h3>
+          <p>Still ~160% above a year ago after doubling in Q1, the price eases as CATL's suspended Jiangxi mine moves closer to reopening.</p>
+          <div class="src">Source: <a href="https://tradingeconomics.com/commodity/lithium" target="_blank" rel="noopener">Trading Economics</a> · <a href="https://investingnews.com/daily/resource-investing/battery-metals-investing/lithium-investing/lithium-forecast/" target="_blank" rel="noopener">INN</a></div>
+        </article>
+        <article>
+          <div class="ph"><img src="fotos/olaroz.jpg" alt="Satellite view of lithium evaporation ponds at Salar de Olaroz, Jujuy, Argentina" width="1600" height="900" loading="lazy"><small>Salar de Olaroz, Jujuy — INPE satellite imagery (CC BY-SA 2.0)</small></div>
+          <div class="kicker" style="margin-top:10px">Argentina · Production</div>
+          <h3>Argentina's output jumped 66% in 2025 — and the 2026 pipeline is even bigger</h3>
+          <p>Centenario-Ratones, Sal de Oro and Mariana come online as installed capacity heads from 159,000 t toward 400,000 t by 2030.</p>
+          <div class="src">Source: <a href="https://discoveryalert.com.au/argentinian-lithium-production-2026-resource-scalability/" target="_blank" rel="noopener">Discovery Alert</a></div>
+        </article>
+      </div>
+
+      <!-- ÚLTIMOS TITULARES: reales -->
+      <div class="latest" style="padding-top:10px" id="analysis">
+        <h4>Latest headlines</h4>
+        <div class="cols">
+          <a class="it" href="https://buenosairesherald.com/business/mining/argentinas-new-10-year-lithium-plan-just-dropped" target="_blank" rel="noopener"><div class="t">Argentina unveils a 10-year lithium plan to climb the producer rankings</div><div class="m"><b>Argentina</b> · Buenos Aires Herald</div></a>
+          <a class="it" href="https://www.fastmarkets.com/insights/lithium-spodumene-swing-supply-should-act-rationally-amid-price-uptrend-pls-ceo/" target="_blank" rel="noopener"><div class="t">Mineral Resources readies Bald Hill restart as swing supply returns</div><div class="m"><b>Markets</b> · Fastmarkets</div></a>
+          <a class="it" href="https://www.panorama-minero.com/en/news/fastmarkets-says-lithium-is-entering-a-new-phase-as-demand-outpaces-supply" target="_blank" rel="noopener"><div class="t">Fastmarkets: lithium is entering a new phase as demand outpaces supply</div><div class="m"><b>Analysis</b> · Panorama Minero</div></a>
+          <a class="it" href="https://www.spglobal.com/energy/en/news-research/latest-news/metals/010926-commodities-2026-lithium-carbonate-surplus-to-narrow-energy-storage-to-drive-growth" target="_blank" rel="noopener"><div class="t">S&P Global: carbonate surplus to narrow in 2026 as storage demand accelerates</div><div class="m"><b>World</b> · S&P Global</div></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDEBAR DE DATOS REALES -->
+    <aside>
+      <div class="box">
+        <h4>Lithium markets <a href="https://tradingeconomics.com/commodity/lithium" target="_blank" rel="noopener">Full data →</a></h4>
+        <table class="mkt" id="tabla-mercado"></table>
+        <div class="foot-note" id="mercado-nota">Cargando cotizaciones…</div>
+      </div>
+
+      <div class="box">
+        <h4>The Triangle in numbers</h4>
+        <div class="tiles">
+          <div class="tile"><div class="big"><em>~56%</em></div><div class="lbl">of the world's known lithium resources</div></div>
+          <div class="tile"><div class="big">64,100 t</div><div class="lbl">Chile production 2025 (+10.1%)</div></div>
+          <div class="tile"><div class="big">+66%</div><div class="lbl">Argentina production growth in 2025</div></div>
+          <div class="tile"><div class="big"><em>#1</em></div><div class="lbl">Bolivia: largest resource, barely produced</div></div>
+        </div>
+        <div class="foot-note">Sources: USGS · Mining Technology · official data</div>
+      </div>
+
+      <div class="box">
+        <h4>Around the sector</h4>
+        <table class="mkt most">
+          <tr><td class="r">›</td><td><a href="https://www.panorama-minero.com/es" target="_blank" rel="noopener">Panorama Minero</a></td></tr>
+          <tr><td class="r">›</td><td><a href="https://www.mining.com/commodity/lithium/" target="_blank" rel="noopener">Mining.com — Lithium</a></td></tr>
+          <tr><td class="r">›</td><td><a href="https://buenosairesherald.com/business/mining" target="_blank" rel="noopener">Buenos Aires Herald — Mining</a></td></tr>
+          <tr><td class="r">›</td><td><a href="https://source.benchmarkminerals.com" target="_blank" rel="noopener">Benchmark Source</a></td></tr>
+        </table>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<!-- ENTREVISTAS: citas reales de ejecutivos, con atribución -->
+<section class="interviews" id="interviews">
+  <div class="wrap">
+    <div class="sec-h"><h2>The Lithium Interviews</h2><span class="rule"></span><a href="#">All interviews →</a></div>
+    <div class="sec-sub">In their words: what the industry's leaders are saying. Exclusive AR Lithium Report conversations, coming soon.</div>
+    <div class="lead-int">
+      <div class="avatar">DH</div>
+      <div>
+        <div class="bigquote">We've always been believers in the fundamental growth drivers, and they continue to take flight.</div>
+        <div class="who">Dale Henderson · CEO, Pilbara Minerals — at the Future Minerals Forum, Riyadh · via <a href="https://www.fastmarkets.com/insights/lithium-spodumene-swing-supply-should-act-rationally-amid-price-uptrend-pls-ceo/" target="_blank" rel="noopener">Fastmarkets</a></div>
+      </div>
+    </div>
+    <div class="int-grid">
+      <div class="int-card">
+        <div class="avatar">JP</div>
+        <div>
+          <h3>"This financing package broadens the funding sources available for the Rincón project."</h3>
+          <p>Jérôme Pécresse · CEO, Rio Tinto Aluminium & Lithium · via Panorama Minero</p>
+        </div>
+      </div>
+      <div class="int-card">
+        <div class="avatar">DH</div>
+        <div>
+          <h3>"You'd have to expect people to act rationally as pricing improves" — Henderson on spodumene's swing supply</h3>
+          <p>Pilbara Minerals · via Fastmarkets</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" id="triangle">
+  <div class="sec-h"><h2>The Lithium Triangle</h2><span class="rule"></span><a href="#">Country coverage →</a></div>
+  <div class="sec-sub">Argentina, Chile and Bolivia hold more than half the world's lithium. This is where supply gets decided.</div>
+  <div class="tri">
+    <article class="card">
+      <div class="ph"><img src="fotos/hero_hombre_muerto.jpg" alt="NASA satellite view of the lithium mine facility and solar evaporation ponds at Salar del Hombre Muerto" width="740" height="493" loading="lazy"><small>Salar del Hombre Muerto — NASA Earth Observatory</small></div>
+      <div class="body">
+        <div class="flag">🇦🇷 Argentina</div>
+        <h3>Catamarca's twin engines: Fénix 1B and Sal de Vida on track for H2 2026</h3>
+        <p>Two $700m Rio Tinto projects add 25,000 t/y between them; commissioning runs at 60% and 40%.</p>
+        <div class="src">Source: <a href="https://www.panorama-minero.com/en/news/rio-tinto-secures-us-1-175-billion-for-argentina-lithium-project-as-rincon-begins-exports" target="_blank" rel="noopener">Panorama Minero</a></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="ph"><img src="fotos/atacama_suelo.jpg" alt="Copernicus Sentinel-2 satellite view of the Salar de Atacama, Chile" width="1600" height="900" loading="lazy"><small>Salar de Atacama — Copernicus Sentinel-2 (ESA)</small></div>
+      <div class="body">
+        <div class="flag">🇨🇱 Chile</div>
+        <h3>Atacama expansion set to lift Chilean output to 67,300 t in 2026</h3>
+        <p>SQM's ramp-up drove a 10.1% production rise in 2025; the Codelco partnership now locks the operation in to 2060.</p>
+        <div class="src">Source: <a href="https://www.mining-technology.com/analyst-comment/salar-de-atacama-expansion-chile-lithium-output-2026/" target="_blank" rel="noopener">Mining Technology</a></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="ph"><img src="fotos/uyuni_atardecer.jpg" alt="Sunset over the Salar de Uyuni salt flat, Bolivia" width="1600" height="900" loading="lazy"><small>Salar de Uyuni — Runa 59 (CC BY 4.0)</small></div>
+      <div class="body">
+        <div class="flag">🇧🇴 Bolivia</div>
+        <h3>New government, new rules: Bolivia pivots away from lithium protectionism</h3>
+        <p>The Paz administration courts foreign partners as YLB targets 3,600 t this year — far below the salar's potential.</p>
+        <div class="src">Source: <a href="https://www.mining-technology.com/features/new-president-new-policy-bolivias-shift-against-lithium-protectionism/" target="_blank" rel="noopener">Mining Technology</a></div>
+      </div>
+    </article>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="flogo"><span class="logo-chip"></span><span class="logo-word"><span class="brand-text"></span><small class="brand-tag"></small></span></div>
+      <p style="margin-top:12px;max-width:290px;line-height:1.6">Independent business intelligence on lithium: markets, companies and policy across Argentina, Chile, Bolivia and the world.</p>
+    </div>
+    <div><h5>Sections</h5><ul><li>Interviews</li><li>Markets</li><li>Argentina · Chile · Bolivia</li><li>Companies</li><li>Analysis</li></ul></div>
+    <div><h5>Languages</h5><ul><li>English</li><li>Español</li><li>Français</li><li>中文</li></ul></div>
+  </div>
+  <div class="copy">Photos: NASA Earth Observatory · ESA/Copernicus · INPE · Runa 59 · Wikimedia Commons (free licenses, credited per image) — Market data: Yahoo Finance<br>© 2026 <span class="brand-inline"></span> — working title, subject to change</div>
+</footer>
+
+<script>
+/* ===== MARCA EN UN SOLO LUGAR (nombre provisorio, puede cambiar) ===== */
+const MARCA = { chip:"AR", resto:"LITHIUM REPORT", bajada:"MARKETS · COMPANIES · THE TRIANGLE" };
+document.querySelectorAll(".logo-chip").forEach(e=>e.textContent=MARCA.chip);
+document.querySelectorAll(".brand-text").forEach(e=>e.textContent=MARCA.resto);
+document.querySelectorAll(".brand-tag").forEach(e=>e.textContent=MARCA.bajada);
+document.querySelectorAll(".brand-inline").forEach(e=>e.textContent=MARCA.chip+" "+MARCA.resto);
+
+/* Fecha */
+document.getElementById("fecha").textContent =
+  new Date().toLocaleDateString("en-US",{weekday:"long",year:"numeric",month:"long",day:"numeric"}) + " · Global edition";
+
+/* ===== Cotizaciones reales (data/mercado.js, generado por SCRIPTS/actualizar_mercado.py) ===== */
+function sparkline(cierres, sube, clase){
+  if(!cierres || cierres.length<2) return "";
+  const w=58,h=18,min=Math.min(...cierres),max=Math.max(...cierres),rango=(max-min)||1;
+  const pts=cierres.map((c,i)=>`${(1+i*(w-2)/(cierres.length-1)).toFixed(1)},${(h-2-((c-min)/rango)*(h-4)).toFixed(1)}`).join(" ");
+  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" fill="none"><polyline class="${clase}-${sube?"u":"d"}" stroke-width="1.8" points="${pts}"/></svg>`;
+}
+function pintarMercado(m){
+  const tk=document.getElementById("ticker");
+  tk.innerHTML = m.instrumentos.map(i=>{
+    const sube=i.variacion>=0, signo=sube?"▲":"▼";
+    return `<span class="q"><span class="n">${i.corto}</span><span class="p">${i.precio}</span>`+
+           `<span class="c ${sube?"u":"d"}">${signo}${Math.abs(i.variacion).toFixed(2)}%</span>`+
+           sparkline(i.cierres,sube,"strip-spark")+`</span>`;
+  }).join("");
+  const clon=tk.cloneNode(true); clon.setAttribute("aria-hidden","true");
+  tk.parentNode.appendChild(clon);
+  document.getElementById("tabla-mercado").innerHTML = m.instrumentos.map(i=>{
+    const sube=i.variacion>=0;
+    return `<tr><td class="sym">${i.corto}<small>${i.descripcion}</small></td>`+
+           `<td class="val">${i.precio}</td>`+
+           `<td class="chg ${sube?"u":"d"}">${sube?"+":"−"}${Math.abs(i.variacion).toFixed(2)}%</td>`+
+           `<td class="spk">${sparkline(i.cierres,sube,"side-spark")}</td></tr>`;
+  }).join("");
+  const f=new Date(m.actualizado);
+  document.getElementById("mercado-nota").textContent =
+    `${m.fuente} · updated ${f.toLocaleString("en-US",{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"})} · daily change, 7-day trend`;
+}
+if(window.MERCADO){ pintarMercado(window.MERCADO); }
+else{ document.getElementById("mercado-nota").textContent="Market data unavailable"; }
+</script>
+<script src="data/mercado.js"></script>
+<script>if(window.MERCADO && !document.querySelector("#ticker .q")) pintarMercado(window.MERCADO);</script>
+</body>
+</html>
