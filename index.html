@@ -73,6 +73,10 @@
   .ph small{position:relative;background:rgba(0,0,0,.55);color:#fff;font-size:10.5px;padding:3px 8px;margin:8px;border-radius:3px;letter-spacing:.03em}
 
   .kicker{color:var(--accent-ink);font-size:11.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+  .tag{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;margin-right:6px;vertical-align:1px}
+  .tag-news{background:var(--accent);color:#fff}
+  .tag-analysis{background:var(--ink);color:#fff}
+  .tag-data{background:var(--soft);color:var(--accent-ink);border:1px solid var(--line)}
   .src{font-size:11.5px;color:var(--muted)}
   .src a{color:var(--accent-ink);font-weight:600}
   .hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:26px;padding-bottom:26px;border-bottom:1px solid var(--line)}
@@ -102,6 +106,8 @@
   .mkt td{padding:9px 12px;border-bottom:1px solid var(--soft);vertical-align:middle}
   .mkt tr:last-child td{border-bottom:none}
   .mkt .sym{font-weight:700}
+  .mkt .sym a:hover{color:var(--accent-ink)}
+  .q:hover .n{color:#fff}
   .mkt .sym small{display:block;font-weight:400;color:var(--muted);font-size:11px}
   .mkt .val{text-align:right;font-family:var(--mono);font-weight:600;font-size:13px;white-space:nowrap}
   .mkt .chg{text-align:right;font-family:var(--mono);font-weight:700;font-size:12px;width:58px}
@@ -221,7 +227,7 @@
           <a href="notas/rio-tinto-rincon-financing.html"><div class="ph"><img src="fotos/mineria_hombre_muerto.jpg" alt="Satellite view of lithium evaporation ponds at Salar del Hombre Muerto, Catamarca, Argentina" width="1600" height="892"><small>Salar del Hombre Muerto, Catamarca — INPE satellite imagery (CC BY-SA 2.0)</small></div></a>
         </article>
         <article>
-          <div class="kicker">Argentina · Financing</div>
+          <div class="kicker"><span class="tag tag-news">News</span>Argentina · Financing</div>
           <a href="notas/rio-tinto-rincon-financing.html"><h2>Rio Tinto Locks In $1.175bn for Rincón as First Lithium Cargo Sails to Shanghai</h2></a>
           <p>IFC, IDB Invest, Export Finance Australia and JBIC back the $2.5bn Salta project — 60,000 t/y of battery-grade carbonate from 2028. The first 200-tonne shipment has already left Buenos Aires, and Rio's Argentine lithium bet now tops $3.9bn across five assets.</p>
           <div class="src">Source: Panorama Minero</div>
@@ -233,7 +239,7 @@
         <article>
           <a href="notas/bolivia-uyuni-plantas-dle.html">
           <div class="ph"><img src="fotos/uyuni_esa.jpg" alt="Salar de Uyuni, Bolivia, seen from space" width="1600" height="1067" loading="lazy"><small>Salar de Uyuni — ESA (CC BY-SA 3.0 IGO)</small></div>
-          <div class="kicker" style="margin-top:10px">Bolivia</div>
+          <div class="kicker" style="margin-top:10px"><span class="tag tag-news">News</span>Bolivia</div>
           <h3>Uyuni goes industrial: YLB and China's CBC advance $1bn direct-extraction plants</h3>
           </a>
           <p>Two DLE plants target 35,000 t/y, with YLB keeping 51%. A parallel $970m deal with Russia's Uranium One adds 14,000 t more.</p>
@@ -242,7 +248,7 @@
         <article>
           <a href="notas/codelco-sqm-atacama.html">
           <div class="ph"><img src="fotos/atacama_ponds.jpg" alt="Lithium evaporation ponds at Salar de Atacama, Chile, satellite view" width="710" height="792" loading="lazy"><small>SQM ponds, Salar de Atacama — NASA (public domain)</small></div>
-          <div class="kicker" style="margin-top:10px">Chile · Markets</div>
+          <div class="kicker" style="margin-top:10px"><span class="tag tag-news">News</span>Chile · Markets</div>
           <h3>Codelco and SQM budget $3bn to take direct extraction commercial in the Atacama</h3>
           </a>
           <p>The state-backed venture files its environmental study and targets 280,000–300,000 t/y of LCE from 2031 through 2060.</p>
@@ -251,7 +257,7 @@
         <article>
           <a href="notas/precio-litio-jianxiawo.html">
           <div class="ph"><img src="fotos/baterias.jpg" alt="Cylindrical lithium-ion battery cells" width="1600" height="900" loading="lazy"><small>Li-ion cells — Wikimedia Commons (CC0)</small></div>
-          <div class="kicker" style="margin-top:10px">Markets</div>
+          <div class="kicker" style="margin-top:10px"><span class="tag tag-analysis">Analysis</span>Markets</div>
           <h3>Lithium's comeback cools: carbonate slips to ¥151,750 on Jianxiawo restart talk</h3>
           </a>
           <p>Still ~160% above a year ago after doubling in Q1, the price eases as CATL's suspended Jiangxi mine moves closer to reopening.</p>
@@ -260,7 +266,7 @@
         <article>
           <a href="notas/argentina-produccion-2025.html">
           <div class="ph"><img src="fotos/olaroz.jpg" alt="Satellite view of lithium evaporation ponds at Salar de Olaroz, Jujuy, Argentina" width="1600" height="900" loading="lazy"><small>Salar de Olaroz, Jujuy — INPE satellite imagery (CC BY-SA 2.0)</small></div>
-          <div class="kicker" style="margin-top:10px">Argentina · Production</div>
+          <div class="kicker" style="margin-top:10px"><span class="tag tag-analysis">Analysis</span>Argentina · Production</div>
           <h3>Argentina's output jumped 66% in 2025 — and the 2026 pipeline is even bigger</h3>
           </a>
           <p>Centenario-Ratones, Sal de Oro and Mariana come online as installed capacity heads from 159,000 t toward 400,000 t by 2030.</p>
@@ -272,10 +278,10 @@
       <div class="latest" style="padding-top:10px" id="analysis">
         <h4>Latest headlines</h4>
         <div class="cols">
-          <a class="it" href="notas/fenix-sal-de-vida-catamarca.html"><div class="t">Catamarca's twin engines: Fénix 1B and Sal de Vida on track for H2 2026</div><div class="m"><b>Argentina</b> · Companies</div></a>
-          <a class="it" href="notas/atacama-expansion-2026.html"><div class="t">Atacama expansion set to lift Chilean output to 67,300 tonnes in 2026</div><div class="m"><b>Chile</b> · Production</div></a>
-          <a class="it" href="notas/bolivia-giro-politico.html"><div class="t">New government, new rules: Bolivia pivots away from lithium protectionism</div><div class="m"><b>Bolivia</b> · Policy</div></a>
-          <a class="it" href="notas/precio-litio-jianxiawo.html"><div class="t">Swing supply returns: Bald Hill and Finniss restart as prices recover</div><div class="m"><b>Markets</b> · Analysis</div></a>
+          <a class="it" href="notas/fenix-sal-de-vida-catamarca.html"><div class="t">Catamarca's twin engines: Fénix 1B and Sal de Vida on track for H2 2026</div><div class="m"><b>News</b> · Argentina</div></a>
+          <a class="it" href="notas/atacama-expansion-2026.html"><div class="t">Atacama expansion set to lift Chilean output to 67,300 tonnes in 2026</div><div class="m"><b>Analysis</b> · Chile</div></a>
+          <a class="it" href="notas/bolivia-giro-politico.html"><div class="t">New government, new rules: Bolivia pivots away from lithium protectionism</div><div class="m"><b>Analysis</b> · Bolivia</div></a>
+          <a class="it" href="notas/precio-litio-jianxiawo.html"><div class="t">Swing supply returns: Bald Hill and Finniss restart as prices recover</div><div class="m"><b>Analysis</b> · Markets</div></a>
         </div>
       </div>
     </div>
@@ -289,7 +295,7 @@
       </div>
 
       <div class="box">
-        <h4>The Triangle in numbers</h4>
+        <h4><span><span class="tag tag-data">Data</span>The Triangle in numbers</span></h4>
         <div class="tiles">
           <div class="tile"><div class="big"><em>~56%</em></div><div class="lbl">of the world's known lithium resources</div></div>
           <div class="tile"><div class="big">64,100 t</div><div class="lbl">Chile production 2025 (+10.1%)</div></div>
@@ -366,7 +372,7 @@
     <a class="card" href="notas/fenix-sal-de-vida-catamarca.html">
       <div class="ph"><img src="fotos/hero_hombre_muerto.jpg" alt="NASA satellite view of the lithium mine facility and solar evaporation ponds at Salar del Hombre Muerto" width="740" height="493" loading="lazy"><small>Salar del Hombre Muerto — NASA Earth Observatory</small></div>
       <div class="body">
-        <div class="flag">🇦🇷 Argentina</div>
+        <div class="flag"><span class="tag tag-news">News</span>🇦🇷 Argentina</div>
         <h3>Catamarca's twin engines: Fénix 1B and Sal de Vida on track for H2 2026</h3>
         <p>Two $700m Rio Tinto projects add 25,000 t/y between them; commissioning runs at 60% and 40%.</p>
         <div class="src">Source: Panorama Minero</div>
@@ -375,7 +381,7 @@
     <a class="card" href="notas/atacama-expansion-2026.html">
       <div class="ph"><img src="fotos/atacama_suelo.jpg" alt="Copernicus Sentinel-2 satellite view of the Salar de Atacama, Chile" width="1600" height="900" loading="lazy"><small>Salar de Atacama — Copernicus Sentinel-2 (ESA)</small></div>
       <div class="body">
-        <div class="flag">🇨🇱 Chile</div>
+        <div class="flag"><span class="tag tag-analysis">Analysis</span>🇨🇱 Chile</div>
         <h3>Atacama expansion set to lift Chilean output to 67,300 t in 2026</h3>
         <p>SQM's ramp-up drove a 10.1% production rise in 2025; the Codelco partnership now locks the operation in to 2060.</p>
         <div class="src">Source: Mining Technology</div>
@@ -384,7 +390,7 @@
     <a class="card" href="notas/bolivia-giro-politico.html">
       <div class="ph"><img src="fotos/uyuni_atardecer.jpg" alt="Sunset over the Salar de Uyuni salt flat, Bolivia" width="1600" height="900" loading="lazy"><small>Salar de Uyuni — Runa 59 (CC BY 4.0)</small></div>
       <div class="body">
-        <div class="flag">🇧🇴 Bolivia</div>
+        <div class="flag"><span class="tag tag-analysis">Analysis</span>🇧🇴 Bolivia</div>
         <h3>New government, new rules: Bolivia pivots away from lithium protectionism</h3>
         <p>The Paz administration courts foreign partners as YLB targets 3,600 t this year — far below the salar's potential.</p>
         <div class="src">Source: Mining Technology · The Northern Miner</div>
@@ -428,15 +434,17 @@ function pintarMercado(m){
   const tk=document.getElementById("ticker");
   tk.innerHTML = m.instrumentos.map(i=>{
     const sube=i.variacion>=0, signo=sube?"▲":"▼";
-    return `<span class="q"><span class="n">${i.corto}</span><span class="p">${i.precio}</span>`+
+    const url="https://finance.yahoo.com/quote/"+encodeURIComponent(i.symbol);
+    return `<a class="q" href="${url}" target="_blank" rel="noopener" title="${i.descripcion} — full data"><span class="n">${i.corto}</span><span class="p">${i.precio}</span>`+
            `<span class="c ${sube?"u":"d"}">${signo}${Math.abs(i.variacion).toFixed(2)}%</span>`+
-           sparkline(i.cierres,sube,"strip-spark")+`</span>`;
+           sparkline(i.cierres,sube,"strip-spark")+`</a>`;
   }).join("");
   const clon=tk.cloneNode(true); clon.setAttribute("aria-hidden","true");
   tk.parentNode.appendChild(clon);
   document.getElementById("tabla-mercado").innerHTML = m.instrumentos.map(i=>{
     const sube=i.variacion>=0;
-    return `<tr><td class="sym">${i.corto}<small>${i.descripcion}</small></td>`+
+    const url="https://finance.yahoo.com/quote/"+encodeURIComponent(i.symbol);
+    return `<tr><td class="sym"><a href="${url}" target="_blank" rel="noopener" title="Full data">${i.corto}<small>${i.descripcion}</small></a></td>`+
            `<td class="val">${i.precio}</td>`+
            `<td class="chg ${sube?"u":"d"}">${sube?"+":"−"}${Math.abs(i.variacion).toFixed(2)}%</td>`+
            `<td class="spk">${sparkline(i.cierres,sube,"side-spark")}</td></tr>`;
