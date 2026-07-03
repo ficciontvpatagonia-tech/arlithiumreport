@@ -43,6 +43,14 @@
   .search{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:4px;padding:8px 12px;color:var(--muted);font-size:13px;min-width:210px}
   .btn{background:var(--chrome);color:#fff;font-size:13px;font-weight:700;padding:9px 16px;border-radius:4px;letter-spacing:.02em}
   @media(max-width:760px){.search{display:none}}
+  @media(max-width:620px){
+    .header .wrap{height:auto;padding-top:14px;padding-bottom:14px;gap:12px}
+    .logo{gap:10px}
+    .logo-chip{font-size:19px;padding:8px 10px}
+    .logo-word{font-size:20px;white-space:nowrap}
+    .logo-word small{font-size:8.5px;letter-spacing:.2em;margin-top:3px}
+    .btn{font-size:11.5px;padding:8px 11px;white-space:nowrap}
+  }
 
   nav{background:#fff;border-bottom:2px solid var(--ink);position:sticky;top:0;z-index:50}
   nav .wrap{display:flex;gap:26px;overflow-x:auto}
@@ -77,6 +85,7 @@
   .tag-news{background:var(--accent);color:#fff}
   .tag-analysis{background:var(--ink);color:#fff}
   .tag-data{background:var(--soft);color:var(--accent-ink);border:1px solid var(--line)}
+  .tag-culture{background:#8c5a33;color:#fff}
   .src{font-size:11.5px;color:var(--muted)}
   .src a{color:var(--accent-ink);font-weight:600}
   .hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:26px;padding-bottom:26px;border-bottom:1px solid var(--line)}
@@ -156,6 +165,13 @@
   .int-card h3{font-size:15.5px;font-weight:700;line-height:1.35;color:#fff}
   .int-card p{font-size:12px;color:#8b99a1;margin-top:5px;text-transform:uppercase;letter-spacing:.06em}
 
+  .culture{background:#a9743f;margin:0 0 34px;padding:34px 0 0}
+  .culture .sec-h h2{color:#fff}
+  .culture .sec-h .rule{background:#c99e68}
+  .culture .sec-sub{color:#f3e3c6}
+  .culture .tri .card{background:#fff;border-color:#8c5a33}
+  .culture .src{color:#8a7358}
+
   .tri{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-bottom:38px}
   @media(max-width:820px){.tri{grid-template-columns:1fr}}
   .tri .card{border:1px solid var(--line);border-radius:5px;overflow:hidden;display:block}
@@ -204,6 +220,7 @@
     <a class="star" href="#interviews">★ Interviews</a>
     <a href="#argentina">Argentina</a>
     <a href="#triangle">The Triangle</a>
+    <a href="#culture">Beyond the Salar</a>
     <a href="#companies">Companies</a>
     <a href="#analysis">Analysis</a>
     <a href="events.html">Events</a>
@@ -399,13 +416,49 @@
   </div>
 </div>
 
+<section class="culture" id="culture">
+<div class="wrap">
+  <div class="sec-h"><h2>Beyond the Salar</h2><span class="rule"></span></div>
+  <div class="sec-sub">Life in the lithium provinces: communities, culture and progress in the high puna of Salta, Jujuy and Catamarca.</div>
+  <div class="tri">
+    <a class="card" href="notas/jujuy-lithium-communities.html">
+      <div class="ph"><img src="fotos/salinas_grandes.jpg" alt="Salt harvest mounds on the Salinas Grandes salt flat in the Argentine puna" width="1600" height="1067" loading="lazy"><small>Salinas Grandes — Bernard Gagnon (CC BY-SA 4.0)</small></div>
+      <div class="body">
+        <div class="flag"><span class="tag tag-culture">Culture</span>🇦🇷 Jujuy</div>
+        <h3>A hotel built by its own neighbours: the quiet progress of Jujuy's puna villages</h3>
+        <p>Community-built lodging, satellite internet, greenhouses at 3,700 metres and record mining employment around the salars.</p>
+        <div class="src">Source: Litio Argentina · El Diario 24</div>
+      </div>
+    </a>
+    <a class="card" href="notas/tolar-grande-puna-tourism.html">
+      <div class="ph"><img src="fotos/ojo_de_mar_tolar.jpg" alt="Turquoise saltwater pool ringed by white salt crust, one of the Ojos de Mar near Tolar Grande, Salta" width="1600" height="1200" loading="lazy"><small>Ojos de Mar, Tolar Grande — Alicia Nijdam (CC BY 2.0)</small></div>
+      <div class="body">
+        <div class="flag"><span class="tag tag-culture">Culture</span>🇦🇷 Salta</div>
+        <h3>Tolar Grande: the railway village turning otherworldly landscapes into a local economy</h3>
+        <p>Family-run tourism across the planet's third-largest salt flat, home to the oldest life forms on Earth.</p>
+        <div class="src">Source: Visit Salta · La Nación</div>
+      </div>
+    </a>
+    <a class="card" href="notas/chaku-vicuna-laguna-blanca.html">
+      <div class="ph"><img src="fotos/vicunas_puna.jpg" alt="Three wild vicuñas grazing on tussock grass in the high Andean puna" width="1600" height="1067" loading="lazy"><small>Vicuñas in the puna — Andrés Jäkel (CC BY-SA 4.0)</small></div>
+      <div class="body">
+        <div class="flag"><span class="tag tag-culture">Culture</span>🇦🇷 Catamarca</div>
+        <h3>The chaku returns: ancestral vicuña shearing sustains weavers in the high puna</h3>
+        <p>In Laguna Blanca, communities shear and release wild vicuñas as their ancestors did — the world's finest fibre.</p>
+        <div class="src">Source: Turismo Catamarca · El Ancasti</div>
+      </div>
+    </a>
+  </div>
+</div>
+</section>
+
 <footer>
   <div class="wrap">
     <div>
       <div class="flogo"><span class="logo-chip"></span><span class="logo-word"><span class="brand-text"></span><small class="brand-tag"></small></span></div>
       <p style="margin-top:12px;max-width:290px;line-height:1.6">Independent business intelligence on lithium: markets, companies and policy across Argentina, Chile, Bolivia and the world.</p>
     </div>
-    <div><h5>Sections</h5><ul><li><a href="#interviews">Interviews</a></li><li><a href="#markets">Markets</a></li><li><a href="#triangle">Argentina · Chile · Bolivia</a></li><li><a href="#companies">Companies</a></li><li><a href="#analysis">Analysis</a></li><li><a href="events.html">Events</a></li><li><a href="glossary.html">Glossary</a></li></ul></div>
+    <div><h5>Sections</h5><ul><li><a href="#interviews">Interviews</a></li><li><a href="#markets">Markets</a></li><li><a href="#triangle">Argentina · Chile · Bolivia</a></li><li><a href="#culture">Beyond the Salar</a></li><li><a href="#companies">Companies</a></li><li><a href="#analysis">Analysis</a></li><li><a href="events.html">Events</a></li><li><a href="glossary.html">Glossary</a></li></ul></div>
     <div><h5>AR Lithium Report</h5><ul><li><a href="about.html">About us</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li></ul></div>
   </div>
   <div class="copy">Photos: NASA Earth Observatory · ESA/Copernicus · INPE · Runa 59 · Wikimedia Commons (free licenses, credited per image) — Market data: Yahoo Finance<br>© 2026 <span class="brand-inline"></span> — Independent publication. Nothing on this site is investment advice.</div>
