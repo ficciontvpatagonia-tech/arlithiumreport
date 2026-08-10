@@ -1,5 +1,5 @@
 window.MERCADO = {
- "actualizado": "2026-08-07T21:54:04Z",
+ "actualizado": "2026-08-10T21:56:11Z",
  "fuente": "Yahoo Finance",
  "instrumentos": [
   {
@@ -14,112 +14,112 @@ window.MERCADO = {
    "symbol": "LIT",
    "corto": "LIT ETF",
    "descripcion": "Global X Lithium & Battery Tech · NYSE",
-   "precio": "$74.01",
-   "variacion": 2.21,
+   "precio": "$74.74",
+   "variacion": 0.99,
    "cierres": [
-    69.81,
     69.22,
     69.41,
     71.69,
     72.65,
     72.41,
-    74.01
+    74.01,
+    74.74
    ]
   },
   {
    "symbol": "ALB",
    "corto": "ALB",
    "descripcion": "Albemarle · NYSE",
-   "precio": "$131.11",
-   "variacion": 4.54,
+   "precio": "$131.21",
+   "variacion": 0.08,
    "cierres": [
-    117.76,
     117.64,
     118.71,
     120.82,
     118.84,
     125.42,
-    131.11
+    131.11,
+    131.21
    ]
   },
   {
    "symbol": "SQM",
    "corto": "SQM",
    "descripcion": "SQM · NYSE",
-   "precio": "$71.95",
-   "variacion": -0.69,
+   "precio": "$72.84",
+   "variacion": 1.24,
    "cierres": [
-    68.43,
     67.06,
     67.03,
     68.58,
     70.05,
     72.45,
-    71.95
+    71.95,
+    72.84
    ]
   },
   {
    "symbol": "LAR",
    "corto": "LAR",
    "descripcion": "Lithium Argentina · NYSE",
-   "precio": "$6.94",
-   "variacion": 5.31,
+   "precio": "$7.10",
+   "variacion": 2.31,
    "cierres": [
-    5.93,
     6.01,
     6.23,
     6.42,
     6.35,
     6.59,
-    6.94
+    6.94,
+    7.1
    ]
   },
   {
    "symbol": "PLS.AX",
    "corto": "PLS",
    "descripcion": "Pilbara Minerals · ASX",
-   "precio": "A$4.58",
-   "variacion": 6.51,
+   "precio": "A$4.72",
+   "variacion": 3.06,
    "cierres": [
-    4.21,
     4.15,
     4.08,
     4.28,
     4.33,
     4.3,
-    4.58
+    4.58,
+    4.72
    ]
   },
   {
    "symbol": "002460.SZ",
    "corto": "GANFENG",
    "descripcion": "Ganfeng Lithium · SZSE",
-   "precio": "¥52.82",
-   "variacion": 1.11,
+   "precio": "¥54.13",
+   "variacion": 2.48,
    "cierres": [
-    49.93,
     49.71,
     50.4,
     51.7,
     52.98,
     52.24,
-    52.82
+    52.82,
+    54.13
    ]
   },
   {
    "symbol": "RIO",
    "corto": "RIO",
    "descripcion": "Rio Tinto (Arcadium) · NYSE",
-   "precio": "$101.10",
-   "variacion": 1.46,
+   "precio": "$101.91",
+   "variacion": 0.8,
    "cierres": [
-    97.18,
     96.85,
     95.9,
     99.01,
     101.51,
     99.65,
-    101.1
+    101.1,
+    101.91
    ]
   }
  ]
