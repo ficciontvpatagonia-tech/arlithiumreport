@@ -1,15 +1,15 @@
 window.MERCADO = {
- "actualizado": "2026-09-04T23:02:25Z",
+ "actualizado": "2026-09-07T23:28:57Z",
  "fuente": "Yahoo Finance",
  "instrumentos": [
   {
    "symbol": "LTH=F",
    "corto": "LiOH CIF CJK",
    "descripcion": "Lithium hydroxide (Fastmarkets) · COMEX",
-   "precio": "$18.42/kg",
+   "precio": "$18.15/kg",
    "variacion": 0.0,
    "cierres": [
-    18.42
+    18.15
    ]
   },
   {
@@ -80,32 +80,32 @@ window.MERCADO = {
    "symbol": "PLS.AX",
    "corto": "PLS",
    "descripcion": "Pilbara Minerals · ASX",
-   "precio": "A$5.09",
-   "variacion": -2.12,
+   "precio": "A$4.93",
+   "variacion": -3.14,
    "cierres": [
-    5.15,
     5.36,
     5.4,
     5.48,
     5.19,
     5.2,
-    5.09
+    5.09,
+    4.93
    ]
   },
   {
    "symbol": "002460.SZ",
    "corto": "GANFENG",
    "descripcion": "Ganfeng Lithium · SZSE",
-   "precio": "¥49.09",
-   "variacion": -2.83,
+   "precio": "¥48.86",
+   "variacion": -0.47,
    "cierres": [
-    54.13,
     55.0,
     53.89,
     52.53,
     50.23,
     50.52,
-    49.09
+    49.09,
+    48.86
    ]
   },
   {
