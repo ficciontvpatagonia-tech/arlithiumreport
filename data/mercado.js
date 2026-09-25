@@ -1,5 +1,5 @@
 window.MERCADO = {
- "actualizado": "2026-09-24T23:52:12Z",
+ "actualizado": "2026-09-25T23:56:15Z",
  "fuente": "Yahoo Finance",
  "instrumentos": [
   {
@@ -16,76 +16,80 @@ window.MERCADO = {
    "symbol": "LIT",
    "corto": "LIT ETF",
    "descripcion": "Global X Lithium & Battery Tech · NYSE",
-   "precio": "$68.82",
-   "variacion": -1.09,
+   "precio": "$69.02",
+   "variacion": 0.29,
    "cierres": [
-    69.85,
     70.9,
     70.5,
     70.83,
+    71.33,
     69.58,
-    68.82
+    68.82,
+    69.02
    ]
   },
   {
    "symbol": "ALB",
    "corto": "ALB",
    "descripcion": "Albemarle · NYSE",
-   "precio": "$108.25",
-   "variacion": -4.6,
+   "precio": "$109.73",
+   "variacion": 1.37,
    "cierres": [
-    109.47,
     115.05,
     110.91,
     112.92,
+    116.8,
     113.47,
-    108.25
+    108.25,
+    109.73
    ]
   },
   {
    "symbol": "SQM",
    "corto": "SQM",
    "descripcion": "SQM · NYSE",
-   "precio": "$67.12",
-   "variacion": -2.84,
+   "precio": "$66.89",
+   "variacion": -0.34,
    "cierres": [
-    68.68,
     71.8,
     67.72,
     69.53,
+    70.19,
     69.08,
-    67.12
+    67.12,
+    66.89
    ]
   },
   {
    "symbol": "LAR",
    "corto": "LAR",
    "descripcion": "Lithium Argentina · NYSE",
-   "precio": "$5.68",
-   "variacion": -1.73,
+   "precio": "$5.52",
+   "variacion": -2.82,
    "cierres": [
-    5.56,
     5.77,
     5.77,
     5.92,
+    6.07,
     5.78,
-    5.68
+    5.68,
+    5.52
    ]
   },
   {
    "symbol": "PLS.AX",
    "corto": "PLS",
    "descripcion": "Pilbara Minerals · ASX",
-   "precio": "A$3.94",
-   "variacion": -5.74,
+   "precio": "A$3.84",
+   "variacion": -2.54,
    "cierres": [
-    4.25,
     4.22,
     4.17,
     4.13,
     4.13,
     4.18,
-    3.94
+    3.94,
+    3.84
    ]
   },
   {
@@ -108,15 +112,16 @@ window.MERCADO = {
    "symbol": "RIO",
    "corto": "RIO",
    "descripcion": "Rio Tinto (Arcadium) · NYSE",
-   "precio": "$94.47",
-   "variacion": -0.82,
+   "precio": "$94.56",
+   "variacion": 0.1,
    "cierres": [
-    95.79,
     98.04,
     97.37,
     97.04,
+    97.49,
     95.25,
-    94.47
+    94.47,
+    94.56
    ]
   }
  ]
