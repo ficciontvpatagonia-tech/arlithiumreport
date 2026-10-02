@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-01T00:32:13Z",
+ "actualizado": "2026-10-02T00:45:35Z",
  "fuente": "Yahoo Finance",
  "instrumentos": [
   {
@@ -14,76 +14,76 @@
    "symbol": "LIT",
    "corto": "LIT ETF",
    "descripcion": "Global X Lithium & Battery Tech · NYSE",
-   "precio": "$68.42",
-   "variacion": 0.21,
+   "precio": "$68.22",
+   "variacion": -0.47,
    "cierres": [
-    71.33,
     69.58,
     68.82,
     69.02,
     68.28,
-    68.54
+    68.54,
+    68.42
    ]
   },
   {
    "symbol": "ALB",
    "corto": "ALB",
    "descripcion": "Albemarle · NYSE",
-   "precio": "$105.78",
-   "variacion": -1.5,
+   "precio": "$105.03",
+   "variacion": -2.41,
    "cierres": [
-    116.8,
     113.47,
     108.25,
     109.73,
     107.39,
-    107.62
+    107.62,
+    105.78
    ]
   },
   {
    "symbol": "SQM",
    "corto": "SQM",
    "descripcion": "SQM · NYSE",
-   "precio": "$64.87",
-   "variacion": -0.45,
+   "precio": "$64.12",
+   "variacion": -2.97,
    "cierres": [
-    70.19,
     69.08,
     67.12,
     66.89,
     65.16,
-    66.08
+    66.08,
+    64.87
    ]
   },
   {
    "symbol": "LAR",
    "corto": "LAR",
    "descripcion": "Lithium Argentina · NYSE",
-   "precio": "$5.50",
-   "variacion": 1.66,
+   "precio": "$5.54",
+   "variacion": 0.91,
    "cierres": [
-    6.07,
     5.78,
     5.68,
     5.52,
     5.41,
-    5.49
+    5.49,
+    5.5
    ]
   },
   {
    "symbol": "PLS.AX",
    "corto": "PLS",
    "descripcion": "Pilbara Minerals · ASX",
-   "precio": "A$3.77",
-   "variacion": -2.46,
+   "precio": "A$3.79",
+   "variacion": 3.97,
    "cierres": [
-    4.18,
     3.94,
     3.84,
     3.84,
     3.87,
     3.86,
-    3.765
+    3.65,
+    3.795
    ]
   },
   {
@@ -106,15 +106,15 @@
    "symbol": "RIO",
    "corto": "RIO",
    "descripcion": "Rio Tinto (Arcadium) · NYSE",
-   "precio": "$94.17",
-   "variacion": -0.25,
+   "precio": "$92.87",
+   "variacion": -1.37,
    "cierres": [
-    97.49,
     95.25,
     94.47,
     94.56,
     94.41,
-    94.16
+    94.16,
+    94.17
    ]
   }
  ]
