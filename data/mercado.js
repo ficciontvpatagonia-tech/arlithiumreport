@@ -1,95 +1,93 @@
 window.MERCADO = {
- "actualizado": "2026-10-06T01:45:05Z",
+ "actualizado": "2026-10-07T00:39:57Z",
  "fuente": "Yahoo Finance",
  "instrumentos": [
   {
    "symbol": "LTH=F",
    "corto": "LiOH CIF CJK",
    "descripcion": "Lithium hydroxide (Fastmarkets) · COMEX",
-   "precio": "$15.37/kg",
+   "precio": "$16.37/kg",
    "variacion": 0.0,
-   "cierres": [
-    15.37
-   ]
+   "cierres": []
   },
   {
    "symbol": "LIT",
    "corto": "LIT ETF",
    "descripcion": "Global X Lithium & Battery Tech · NYSE",
-   "precio": "$70.13",
-   "variacion": 1.23,
+   "precio": "$71.07",
+   "variacion": 1.34,
    "cierres": [
-    69.02,
     68.28,
     68.54,
     68.42,
     68.22,
     69.28,
-    70.13
+    70.13,
+    71.07
    ]
   },
   {
    "symbol": "ALB",
    "corto": "ALB",
    "descripcion": "Albemarle · NYSE",
-   "precio": "$104.37",
-   "variacion": -0.21,
+   "precio": "$106.35",
+   "variacion": 1.9,
    "cierres": [
-    109.73,
     107.39,
     107.62,
     105.78,
     105.03,
     104.59,
-    104.37
+    104.37,
+    106.35
    ]
   },
   {
    "symbol": "SQM",
    "corto": "SQM",
    "descripcion": "SQM · NYSE",
-   "precio": "$65.83",
-   "variacion": 2.03,
+   "precio": "$66.17",
+   "variacion": 0.52,
    "cierres": [
-    66.89,
     65.16,
     66.08,
     64.87,
     64.12,
     64.52,
-    65.83
+    65.83,
+    66.17
    ]
   },
   {
    "symbol": "LAR",
    "corto": "LAR",
    "descripcion": "Lithium Argentina · NYSE",
-   "precio": "$5.60",
-   "variacion": 2.0,
+   "precio": "$5.58",
+   "variacion": -0.36,
    "cierres": [
-    5.52,
     5.41,
     5.49,
     5.5,
     5.54,
     5.49,
-    5.6
+    5.6,
+    5.58
    ]
   },
   {
    "symbol": "PLS.AX",
    "corto": "PLS",
    "descripcion": "Pilbara Minerals · ASX",
-   "precio": "A$3.81",
-   "variacion": 2.55,
+   "precio": "A$3.82",
+   "variacion": 0.26,
    "cierres": [
-    3.84,
     3.87,
     3.86,
     3.65,
     3.7,
     3.72,
-    3.815
+    3.81,
+    3.82
    ]
   },
   {
@@ -112,16 +110,16 @@ window.MERCADO = {
    "symbol": "RIO",
    "corto": "RIO",
    "descripcion": "Rio Tinto (Arcadium) · NYSE",
-   "precio": "$95.65",
-   "variacion": 1.53,
+   "precio": "$95.89",
+   "variacion": 0.25,
    "cierres": [
-    94.56,
     94.41,
     94.16,
     94.17,
     92.87,
     94.21,
-    95.65
+    95.65,
+    95.89
    ]
   }
  ]
