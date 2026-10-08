@@ -1,23 +1,24 @@
 window.MERCADO = {
- "actualizado": "2026-10-07T00:39:57Z",
+ "actualizado": "2026-10-08T00:58:06Z",
  "fuente": "Yahoo Finance",
  "instrumentos": [
   {
    "symbol": "LTH=F",
    "corto": "LiOH CIF CJK",
    "descripcion": "Lithium hydroxide (Fastmarkets) · COMEX",
-   "precio": "$16.37/kg",
+   "precio": "$15.00/kg",
    "variacion": 0.0,
-   "cierres": []
+   "cierres": [
+    15.0
+   ]
   },
   {
    "symbol": "LIT",
    "corto": "LIT ETF",
    "descripcion": "Global X Lithium & Battery Tech · NYSE",
-   "precio": "$71.07",
-   "variacion": 1.34,
+   "precio": "$69.51",
+   "variacion": -0.88,
    "cierres": [
-    68.28,
     68.54,
     68.42,
     68.22,
@@ -30,10 +31,9 @@ window.MERCADO = {
    "symbol": "ALB",
    "corto": "ALB",
    "descripcion": "Albemarle · NYSE",
-   "precio": "$106.35",
-   "variacion": 1.9,
+   "precio": "$102.75",
+   "variacion": -1.55,
    "cierres": [
-    107.39,
     107.62,
     105.78,
     105.03,
@@ -46,10 +46,9 @@ window.MERCADO = {
    "symbol": "SQM",
    "corto": "SQM",
    "descripcion": "SQM · NYSE",
-   "precio": "$66.17",
-   "variacion": 0.52,
+   "precio": "$64.61",
+   "variacion": -1.85,
    "cierres": [
-    65.16,
     66.08,
     64.87,
     64.12,
@@ -62,10 +61,9 @@ window.MERCADO = {
    "symbol": "LAR",
    "corto": "LAR",
    "descripcion": "Lithium Argentina · NYSE",
-   "precio": "$5.58",
-   "variacion": -0.36,
+   "precio": "$5.37",
+   "variacion": -4.11,
    "cierres": [
-    5.41,
     5.49,
     5.5,
     5.54,
@@ -78,16 +76,16 @@ window.MERCADO = {
    "symbol": "PLS.AX",
    "corto": "PLS",
    "descripcion": "Pilbara Minerals · ASX",
-   "precio": "A$3.82",
-   "variacion": 0.26,
+   "precio": "A$3.77",
+   "variacion": -2.84,
    "cierres": [
-    3.87,
     3.86,
     3.65,
     3.7,
     3.72,
     3.81,
-    3.82
+    3.88,
+    3.77
    ]
   },
   {
@@ -110,10 +108,9 @@ window.MERCADO = {
    "symbol": "RIO",
    "corto": "RIO",
    "descripcion": "Rio Tinto (Arcadium) · NYSE",
-   "precio": "$95.89",
-   "variacion": 0.25,
+   "precio": "$93.16",
+   "variacion": -2.6,
    "cierres": [
-    94.41,
     94.16,
     94.17,
     92.87,
