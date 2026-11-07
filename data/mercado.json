@@ -1,81 +1,87 @@
 {
- "actualizado": "2026-11-06T01:30:59Z",
+ "actualizado": "2026-11-07T00:53:53Z",
  "fuente": "Yahoo Finance",
  "instrumentos": [
   {
    "symbol": "LTH=F",
    "corto": "LiOH CIF CJK",
    "descripcion": "Lithium hydroxide (Fastmarkets) · COMEX",
-   "precio": "$13.25/kg",
+   "precio": "$13.32/kg",
    "variacion": 0.0,
-   "cierres": []
+   "cierres": [
+    13.32
+   ]
   },
   {
    "symbol": "LIT",
    "corto": "LIT ETF",
    "descripcion": "Global X Lithium & Battery Tech · NYSE",
-   "precio": "$60.18",
-   "variacion": 0.13,
+   "precio": "$60.91",
+   "variacion": 1.21,
    "cierres": [
-    62.69,
     60.94,
     59.81,
     60.05,
     60.1,
-    61.88
+    61.88,
+    60.18,
+    60.91
    ]
   },
   {
    "symbol": "ALB",
    "corto": "ALB",
    "descripcion": "Albemarle · NYSE",
-   "precio": "$98.37",
-   "variacion": 9.07,
+   "precio": "$99.25",
+   "variacion": 0.89,
    "cierres": [
-    96.96,
     93.27,
     91.0,
     90.56,
     90.19,
-    94.97
+    94.97,
+    98.37,
+    99.25
    ]
   },
   {
    "symbol": "SQM",
    "corto": "SQM",
    "descripcion": "SQM · NYSE",
-   "precio": "$56.36",
-   "variacion": 4.93,
+   "precio": "$57.52",
+   "variacion": 2.06,
    "cierres": [
-    58.94,
     56.37,
     54.65,
     54.67,
     53.71,
-    57.56
+    57.56,
+    56.36,
+    57.52
    ]
   },
   {
    "symbol": "LAR",
    "corto": "LAR",
    "descripcion": "Lithium Argentina · NYSE",
-   "precio": "$4.07",
-   "variacion": 1.5,
+   "precio": "$4.25",
+   "variacion": 4.42,
    "cierres": [
-    4.54,
     4.45,
     4.08,
     4.08,
     4.01,
-    4.2
+    4.2,
+    4.07,
+    4.25
    ]
   },
   {
    "symbol": "PLS.AX",
    "corto": "PLS",
    "descripcion": "Pilbara Minerals · ASX",
-   "precio": "A$2.75",
-   "variacion": -3.0,
+   "precio": "A$2.83",
+   "variacion": 0.0,
    "cierres": [
     2.75,
     2.64,
@@ -83,37 +89,40 @@
     2.63,
     2.6,
     2.83,
-    2.745
+    2.83,
+    2.83
    ]
   },
   {
    "symbol": "002460.SZ",
    "corto": "GANFENG",
    "descripcion": "Ganfeng Lithium · SZSE",
-   "precio": "¥39.33",
-   "variacion": 6.27,
+   "precio": "¥38.22",
+   "variacion": -2.82,
    "cierres": [
     35.36,
     34.96,
     35.58,
     35.84,
     37.01,
-    39.33
+    39.33,
+    38.22
    ]
   },
   {
    "symbol": "RIO",
    "corto": "RIO",
    "descripcion": "Rio Tinto (Arcadium) · NYSE",
-   "precio": "$83.16",
-   "variacion": 1.89,
+   "precio": "$83.73",
+   "variacion": 0.69,
    "cierres": [
-    85.93,
     83.25,
     81.89,
     82.73,
     81.62,
-    84.56
+    84.56,
+    83.16,
+    83.73
    ]
   }
  ]
