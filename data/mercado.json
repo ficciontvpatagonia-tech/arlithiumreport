@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19T02:31:42Z",
+ "actualizado": "2026-11-20T02:17:20Z",
  "fuente": "Yahoo Finance",
  "instrumentos": [
   {
@@ -16,10 +16,9 @@
    "symbol": "LIT",
    "corto": "LIT ETF",
    "descripcion": "Global X Lithium & Battery Tech · NYSE",
-   "precio": "$55.57",
-   "variacion": -1.51,
+   "precio": "$54.33",
+   "variacion": -3.7,
    "cierres": [
-    59.98,
     61.07,
     59.43,
     58.76,
@@ -32,10 +31,9 @@
    "symbol": "ALB",
    "corto": "ALB",
    "descripcion": "Albemarle · NYSE",
-   "precio": "$85.82",
-   "variacion": -2.11,
+   "precio": "$82.93",
+   "variacion": -5.41,
    "cierres": [
-    94.93,
     95.97,
     94.85,
     93.53,
@@ -48,10 +46,9 @@
    "symbol": "SQM",
    "corto": "SQM",
    "descripcion": "SQM · NYSE",
-   "precio": "$48.74",
-   "variacion": -5.52,
+   "precio": "$47.85",
+   "variacion": -7.25,
    "cierres": [
-    54.43,
     54.74,
     53.89,
     53.61,
@@ -64,10 +61,9 @@
    "symbol": "LAR",
    "corto": "LAR",
    "descripcion": "Lithium Argentina · NYSE",
-   "precio": "$3.37",
-   "variacion": -5.07,
+   "precio": "$3.21",
+   "variacion": -9.58,
    "cierres": [
-    4.11,
     3.94,
     3.73,
     3.68,
@@ -80,42 +76,41 @@
    "symbol": "PLS.AX",
    "corto": "PLS",
    "descripcion": "Pilbara Minerals · ASX",
-   "precio": "A$2.56",
-   "variacion": -1.35,
+   "precio": "A$2.46",
+   "variacion": -3.91,
    "cierres": [
-    3.1,
     2.85,
     2.86,
     2.89,
     2.64,
     2.6,
-    2.565
+    2.56,
+    2.46
    ]
   },
   {
    "symbol": "002460.SZ",
    "corto": "GANFENG",
    "descripcion": "Ganfeng Lithium · SZSE",
-   "precio": "¥33.89",
-   "variacion": -2.25,
+   "precio": "¥33.15",
+   "variacion": -3.07,
    "cierres": [
-    37.15,
     36.59,
     35.82,
     34.89,
     35.17,
     34.67,
-    33.89
+    34.2,
+    33.15
    ]
   },
   {
    "symbol": "RIO",
    "corto": "RIO",
    "descripcion": "Rio Tinto (Arcadium) · NYSE",
-   "precio": "$75.90",
-   "variacion": -4.49,
+   "precio": "$74.70",
+   "variacion": -6.0,
    "cierres": [
-    84.54,
     84.97,
     83.28,
     82.95,
