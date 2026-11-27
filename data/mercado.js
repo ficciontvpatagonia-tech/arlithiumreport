@@ -1,5 +1,5 @@
 window.MERCADO = {
- "actualizado": "2026-11-26T03:31:48Z",
+ "actualizado": "2026-11-27T03:37:25Z",
  "fuente": "Yahoo Finance",
  "instrumentos": [
   {
@@ -80,32 +80,32 @@ window.MERCADO = {
    "symbol": "PLS.AX",
    "corto": "PLS",
    "descripcion": "Pilbara Minerals · ASX",
-   "precio": "A$2.59",
-   "variacion": 1.17,
+   "precio": "A$2.67",
+   "variacion": 2.69,
    "cierres": [
-    2.6,
     2.56,
     2.62,
     2.74,
     2.72,
     2.56,
-    2.59
+    2.6,
+    2.67
    ]
   },
   {
    "symbol": "002460.SZ",
    "corto": "GANFENG",
    "descripcion": "Ganfeng Lithium · SZSE",
-   "precio": "¥31.91",
-   "variacion": 2.01,
+   "precio": "¥32.07",
+   "variacion": 1.97,
    "cierres": [
-    34.67,
     34.2,
     33.12,
     33.68,
     33.34,
     31.28,
-    31.91
+    31.45,
+    32.07
    ]
   },
   {
